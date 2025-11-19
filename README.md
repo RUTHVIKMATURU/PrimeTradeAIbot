@@ -1,6 +1,6 @@
-🚀 Simplified Binance Futures Testnet Trading Bot
+# 🚀 Simplified Binance Futures Testnet Trading Bot
 
-A Python-based trading bot for Binance USDT-M Futures Testnet, supporting Market, Limit, Stop-Limit, and TWAP orders with full logging and automatic notional validation.
+# A Python-based trading bot for Binance USDT-M Futures Testnet, supporting Market, Limit, Stop-Limit, and TWAP orders with full logging and automatic notional validation.
 
 ✨ Features
 
