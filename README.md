@@ -108,11 +108,7 @@ basicbot.log
 ```
 
 The log includes:
-
-timestamps
-
-API requests
-
-API responses
-
-exceptions
+- timestamps
+- API requests
+- API responses
+- exceptions
