@@ -1,5 +1,5 @@
-Simplified Binance Futures Testnet Trading Bot
-Junior Python Developer – Crypto Trading Bot Assignment
+# Simplified Binance Futures Testnet Trading Bot
+# Junior Python Developer – Crypto Trading Bot Assignment
 
 
 
