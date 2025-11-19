@@ -1,3 +1,0 @@
-2025-11-19 18:54:10,590 - INFO - Initialized BasicBot (testnet=True)
-2025-11-19 18:54:11,524 - INFO - Placing MARKET order: BTCUSDT BUY 0.002
-2025-11-19 18:54:11,684 - INFO - MARKET order response: {'orderId': 10371397631, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ53dd41622869b8efcf50e3', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1763558651852}
