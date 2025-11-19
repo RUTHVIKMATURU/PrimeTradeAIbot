@@ -22,14 +22,16 @@
 
 🎁 Bonus: Simple CLI UI Menu for human-friendly interaction
 
-🗂 Project Structure
+## 🗂 Project Structure
+
+```text
 project/
 │── basic_bot.py
-│── ui.py                  # simple CLI UI (bonus)
-│── .env                   # NOT committed to git
-│── basicbot.log           # auto-generated logs
+│── .env                # NOT committed
+│── .env.example
+│── basicbot.log        # auto-generated
 │── README.md
-│── venv/                  # optional
+│── venv/               # optional
 
 ⚙️ Installation
 
