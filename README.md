@@ -33,6 +33,7 @@ project/
 │── README.md
 │── venv/               # optional
 
+```
 ⚙️ Installation
 
 Install required packages using pip:
