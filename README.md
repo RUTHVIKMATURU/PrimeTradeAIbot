@@ -44,7 +44,7 @@ project/
 │── basicbot.log        # auto-generated
 │── README.md
 │── venv/               # optional
-
+```
 
 ⚙️ Setup Instructions
 1️⃣ Create Virtual Environment
