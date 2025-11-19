@@ -7,9 +7,9 @@ import argparse, os, time, logging, sys, math
 from datetime import datetime
 
 # === Logging setup ===
-logger = logging.getLogger("basicbot")
+logger = logging.getLogger("bot")
 logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler("basicbot.log")
+fh = logging.FileHandler("bot.log")
 fh.setLevel(logging.DEBUG)
 ch = logging.StreamHandler(sys.stdout)
 ch.setLevel(logging.INFO)

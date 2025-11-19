@@ -10,7 +10,6 @@ venv/
 
 # Log files
 *.log
-basicbot.log
 
 # IDE settings
 .vscode/
