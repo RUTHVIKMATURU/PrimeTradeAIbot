@@ -1,53 +1,44 @@
-# Simplified Binance Futures Testnet Trading Bot
-# Junior Python Developer – Crypto Trading Bot Assignment
+🚀 Simplified Binance Futures Testnet Trading Bot
 
-
-
-
-
-
-🧩 Overview
-
-This project implements a simplified crypto trading bot for the Binance USDT-M Futures Testnet.
-The bot supports Market, Limit, Stop-Limit, and TWAP strategies, handles minimum-notional rules automatically, and logs all API communication.
+A Python-based trading bot for Binance USDT-M Futures Testnet, supporting Market, Limit, Stop-Limit, and TWAP orders with full logging and automatic notional validation.
 
 ✨ Features
-🟢 Core Requirements
 
-Connects to Binance Futures Testnet
+🚀 Market Orders
 
-Uses python-binance library
+📌 Limit Orders
 
-Supports Market, Limit, Stop-Limit, and TWAP orders
+🛑 Stop-Limit Orders
 
-CLI interface using argparse
+📊 TWAP (Time Weighted Average Price) Strategy
 
-Logs all actions to basicbot.log
+🔧 Auto-adjusts quantity to satisfy minimum notional (≥100 USDT)
 
-Error handling and validation
+🧩 Clean OOP architecture (BasicBot class)
 
-🔵 Bonus Features
+📄 Logging to basicbot.log
 
-Auto-adjusts quantity to meet minimum notional (100 USDT)
+🧪 Error handling and CLI input validation
 
-TWAP execution strategy
+🎁 Bonus: Simple CLI UI Menu for human-friendly interaction
 
-Clean OOP structure (BasicBot)
-
-## 🗂 Project Structure
-
-```text
+🗂 Project Structure
 project/
 │── basic_bot.py
-│── .env                # NOT committed
-│── basicbot.log        # auto-generated
+│── ui.py                  # simple CLI UI (bonus)
+│── .env                   # NOT committed to git
+│── basicbot.log           # auto-generated logs
 │── README.md
-│── venv/               # optional
+│── venv/                  # optional
+
+⚙️ Installation
+
+Install required packages using pip:
 ```
-
-⚙️ Setup Instructions
-1️⃣ Create Virtual Environment
-
+pip install python-binance python-dotenv
+```
+⚙️ Setup
+Create Virtual Environment
 
 Linux/macOS
 ```
@@ -60,11 +51,7 @@ Windows
 python -m venv venv
 venv\Scripts\activate
 ```
-2️⃣ Install Dependencies
-```
-pip install python-binance python-dotenv
-```
-3️⃣ Create .env File (in project root)
+Create .env File
 ```
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_api_secret
@@ -73,44 +60,73 @@ BINANCE_API_SECRET=your_testnet_api_secret
 ⚠️ Do NOT add quotes
 ⚠️ Do NOT commit .env to GitHub
 
-4️⃣ Create Testnet API Keys
+Generate Testnet API Keys
 
-Go to:
+Visit:
 https://testnet.binancefuture.com/en/futures
  → Profile → API Management
-
 Enable:
-
-✔ Futures
 
 ✔ Trade
 
-▶️ Usage (CLI Examples)
-📌 Market Order
+✔ Futures
+
+▶️ Usage (Command Line)
+Market Order
 ```
 python basic_bot.py market --symbol BTCUSDT --side BUY --qty 0.002
 ```
-📌 Limit Order
+Limit Order
 ```
 python basic_bot.py limit --symbol ETHUSDT --side BUY --qty 0.04 --price 3000
 ```
-📌 Stop-Limit Order
+Stop-Limit Order
 ```
 python basic_bot.py stoplimit --symbol BTCUSDT --side SELL --qty 0.002 --stop 65000 --price 64900
 ```
-📌 TWAP (Split execution)
+TWAP (Split Order Execution)
 ```
 python basic_bot.py twap --symbol BTCUSDT --side BUY --total_qty 0.01 --slices 5 --interval 10
 ```
+🎁 Bonus: Simple CLI Menu UI
+
+Run:
+```
+python ui.py
+```
+
+You will see:
+```
+=== Trading Bot UI ===
+1. Market Order
+2. Limit Order
+3. Stop-Limit Order
+4. TWAP Order
+5. Exit
+Choose an option:
+```
+Example Input for Market Order
+```
+1
+Symbol: BTCUSDT
+Side (BUY/SELL): BUY
+Quantity: 0.002
+```
+
+Output:
+```
+Placing MARKET order...
+{'symbol': 'BTCUSDT', 'orderId': 1234567, 'status': 'FILLED', ...}
+```
 📜 Logging
 
-All actions are logged to:
+All actions are stored in:
 ```
 basicbot.log
 ```
 
-The log includes:
+Includes:
 - timestamps
 - API requests
 - API responses
-- exceptions
+- errors / exceptions
