@@ -34,14 +34,17 @@ TWAP execution strategy
 
 Clean OOP structure (BasicBot)
 
-🗂 Project Structure
+## 🗂 Project Structure
+
+```text
 project/
 │── basic_bot.py
-│── .env                 # NOT committed
+│── .env                # NOT committed
 │── .env.example
-│── basicbot.log         # auto-generated
+│── basicbot.log        # auto-generated
 │── README.md
-│── venv/                # optional
+│── venv/               # optional
+
 
 ⚙️ Setup Instructions
 1️⃣ Create Virtual Environment
