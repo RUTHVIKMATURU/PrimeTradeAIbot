@@ -116,15 +116,3 @@ API requests
 API responses
 
 exceptions
-
-Attach this file in your submission.
-
-🔒 Security & Best Practices
-
-Always use Testnet API keys
-
-Never commit .env to GitHub
-
-Bot auto-adjusts quantity to avoid:
-
-“Notional must be ≥ 100 USDT” errors
