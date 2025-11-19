@@ -52,17 +52,15 @@ Copy code
 
 1. **Create & activate virtual environment**
 
-Linux/macOS
-```bash
+Linux/macOS:
+
 python3 -m venv venv
 source venv/bin/activate
-Windows
 
----
 
-```powershell
+Windows:
+
 venv\Scripts\activate
-Install dependencies
 
 
 pip install python-binance python-dotenv
