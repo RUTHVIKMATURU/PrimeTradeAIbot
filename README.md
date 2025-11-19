@@ -102,3 +102,5 @@ Use Testnet API keys for development and never use mainnet keys in this project.
 Never commit .env (use .gitignore).
 
 Validate quantities & prices — the bot auto-adjusts quantity to meet minimum notional requirements.
+
+---
