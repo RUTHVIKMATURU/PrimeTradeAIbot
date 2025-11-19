@@ -40,7 +40,6 @@ Clean OOP structure (BasicBot)
 project/
 │── basic_bot.py
 │── .env                # NOT committed
-│── .env.example
 │── basicbot.log        # auto-generated
 │── README.md
 │── venv/               # optional
