@@ -58,18 +58,15 @@ python3 -m venv venv
 source venv/bin/activate
 Windows
 
-powershell
-Copy code
+
 venv\Scripts\activate
 Install dependencies
 
-bash
-Copy code
+
 pip install python-binance python-dotenv
 Create .env (in project root)
 
-ini
-Copy code
+
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_api_secret
 ⚠️ Do not add quotes, do not commit .env to GitHub.
@@ -81,21 +78,21 @@ Enable: Trade / Futures
 
 ▶️ Usage (CLI Examples)
 Market Order
-bash
-Copy code
+
 python basic_bot.py market --symbol BTCUSDT --side BUY --qty 0.002
+
 Limit Order
-bash
-Copy code
+
 python basic_bot.py limit --symbol ETHUSDT --side BUY --qty 0.04 --price 3000
+
 Stop-Limit Order
-bash
-Copy code
+
 python basic_bot.py stoplimit --symbol BTCUSDT --side SELL --qty 0.002 --stop 65000 --price 64900
+
 TWAP (split into slices)
-bash
-Copy code
+
 python basic_bot.py twap --symbol BTCUSDT --side BUY --total_qty 0.01 --slices 5 --interval 10
+
 📜 Logging
 All actions are logged to basicbot.log with timestamps, API responses, and stack traces for errors. This file is created automatically in the project folder when you run the bot.
 
